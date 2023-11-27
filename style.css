@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Height */
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo {
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo img {
+    margin: 20px 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#nav ul {
+    display: inline;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a {
+    display: inline;
+    padding: 3px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: rgb(234, 19, 37);
+    background-color: rgb(127, 255, 146);
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    padding: 5px 150px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    animation-play-state: running;
+    animation-duration: 2s;
+}
+
+#home::before {
+    content: " ";
+    background: url(iet\ luckmow.png) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+
+#home p {
+    text-align: center;
+    color: rgb(244, 18, 18);
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+
+}
+
+/* About-us Section */
+#about-us {
+    display: flex;
+    margin: 34px;
+    background: url(IET_college_Lucknow.jpg) no-repeat center center/cover;
+}
+
+#about-us .box {
+    border: 3px solid red;
+    padding: 15px;
+    margin: 1px 15px;
+    border-radius: 10px;
+    background-color: rgb(233, 240, 227);
+
+}
+
+#about-us .box img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+#about-us .box p {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-weight: 600;
+}
+
+/* Fests Section */
+#fest {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 34px;
+    background: url(IET_college_Lucknow.jpg) no-repeat center center/cover;
+}
+
+#fest .box {
+    flex: 25%;
+    border: 3px solid black;
+    padding: 15px;
+    margin: 1px 15px;
+    border-radius: 10px;
+    background-color: rgb(233, 240, 227);
+}
+
+#fest .box img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+#fest .box p {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-weight: 800;
+}
+
+
+/* Clubs section */
+#clubs {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin: 34px;
+    background: url(IET_college_Lucknow.jpg) no-repeat center center/cover;
+
+}
+
+#clubs .box {
+    flex: 20%;
+    border: 3px solid black;
+    padding: 15px;
+    margin: 1px 15px;
+    border-radius: 10px;
+    background-color: rgb(233, 240, 227);
+
+}
+
+#clubs .box img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#clubs .box p {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    /* font-weight: 800; */
+}
+
+/* contact-section */
+#contact {
+    position: relative;
+    height: 520px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+    background: url(contact-us.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 4.0rem;
+    color: black;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    animation-play-state: running;
+    animation-duration: 2s;
+    /* color: white; */
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    color: rgba(17, 225, 17, 0.95);
+}
+
+.btn {
+    padding: 5px 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 17px;
+    font-size: 1.25rem;
+    text-decoration: double;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* Navigation bar*/
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+
+    }
+
+
+    /* Home Section */
+    #home {
+        height: 900px;
+        padding: 5px 65px;
+
+    }
+
+    #home::before {
+        height: 480px;
+    }
+
+    #home p {
+        font-size: 8px;
+    }
+
+
+    /* club Section */
+    #clubs-section {
+        flex-direction: column;
+
+    }
+
+    #clubs .box {
+        padding: 14px;
+        margin: 2px 0px;
+        margin-bottom: 20px;
+    }
+
+    /* Client section */
+    #fest-section {
+        height: 250px;
+    }
+
+    #fest {
+        flex-wrap: wrap;
+    }
+
+    #fest img {
+        width: 50px;
+        padding: 2px 6px;
+        height: auto;
+    }
+
+    .fest-item {
+        padding: 0px 12px;
+    }
+
+
+
+    /* Contact Section */
+    #contact-box form {
+        width: 80%;
+    }
+
+
+    /* footer */
+
+    /* Utility Classes */
+    .h-primary {
+        font-size: 20px;
+    }
+
+    .h-secondary {
+        font-size: 16px;
+
+    }
+
+    .btn {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+}
+
